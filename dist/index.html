@@ -323,17 +323,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $url = $PHP_SELF."?notice_search_text=".$notice_search_text."&page="; 
-
-if($notice_search_text) {
-    $where = "where title like '%$notice_search_text%' or content like '%$notice_search_text%'";
-}
-
-$sql = "select * from test_list $where order by reg_date DESC limit $limit_page, $page_num";
-$res = $db->query($sql);
-
-$total = $db->fetch_array("SELECT count(*) FROM test_list $where");
-$total_cnt  = ceil($total[0] / $page_num); 
       function getPosts(boardId) {
         var posts = localStorage.getItem(boardId);
         if (posts) {
