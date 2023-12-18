@@ -10,19 +10,6 @@
         <link rel="icon" sizes="57x57" href="./assets/북곽 로고.png">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <script>
-    var portfolio-item = document.querySelector('.portfolio-item')
-    var overlay = document.querySelector('.overlay')
-    container.addEventListener('mousemove', function(e){
-        var x = e.offsetX
-        var y = e.offsetY
-        console.log(x, y);
-        var rotate_X = 4/30 * y - 20
-        var rotate_Y = -1/5 * x + 20
-        overlay.style = `background-position : ${x/5}%`
-        portfolio-item.style.transform = `rotateX(${rotate_X}deg) rotateY(${rotate_Y}deg)`
-    })
-</script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -68,26 +55,6 @@
                                 <div class="col">
                                     <div style="text-align : center;">
                                         <img src="./assets/9월 2주차 시간표.png" alt="9월 1주차" width="350" height="350">
-                                        <style>
-    .portfolio-item {
-        width: 360px; height: 310px;
-    }
-    .overlay{
-        position: absolute;
-        width: 260px;
-        height: 310px;
-        background: linear-gradient(105deg,
-        transparent 40%,
-        #fdff70cc 45%,
-        rgba(112, 172, 255, 0.8) 50%,
-        transparent 20%
-        );
-        filter: brightness(1.2) opacity(0.8);
-        mix-blend-mode: color-dodge;
-        background-size: 150% 150%;
-        background-position: -10%;
-    }
-</style>
                                         <h4 class="my-3">9월 2주차 시간표 안내</h4>
                                         <p class="text-secondary">수행평가 지옥 ㅎㄷㄷ<br/>시간표를 눌러서 수행평가 및 과제 확인</p>
                                     </div>
